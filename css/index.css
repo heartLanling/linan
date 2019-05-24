@@ -301,7 +301,7 @@ a {
     margin: 20px auto;
     width: 1200px;
     height: 310px;
-    background: black;
+    /*background: black;*/
 }
 
 .dairyLeft{
@@ -383,8 +383,63 @@ a {
 .dairyText{
     width: 568px;
     height: 100%;
-    background: aquamarine;
+    /*background: aquamarine;*/
     float: right;
+}
+.dairyText > .five{
+    width: 568px;
+    height: 100%;
+    /*background: pink;*/
+}
+.five li{
+    width: 568px;
+    height: auto;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.five > li > h1{
+    width: auto;
+    height: 20px;
+    /*background: #4ebbfe;*/
+
+}
+.five > li > h1 > i{
+    width: 20px;
+    height: 20px;
+    background: #b1b1b1;
+    float: left;
+    font-size: 14px;
+    color: #333333;
+    font-style: normal;
+    text-align: center;
+    line-height: 20px;
+}
+.five > li > h1 > a{
+    width: 490px;
+    height: 20px;
+    display: block;
+    font-size: 15px;
+    color: #333333;
+    margin-left: 10px;
+    line-height: 20px;
+    float: left;
+}
+
+.five > li > div{
+    /*display: block;*/
+    background: #f7f7f7;
+    width: auto;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #333333;
+    display: none;
+}
+.five > .hot >div{
+    display: -webkit-box;
 }
 
 .slide{
@@ -450,7 +505,7 @@ a {
     margin: 20px auto;
     width: 1200px;
     height: auto;
-    background: black;
+    /*background: black;*/
     min-height: 600px;
 }
 .mainLeft{
@@ -572,6 +627,20 @@ a {
     width: 100%;
     height: 32px;
     border-bottom: 1px solid #e4e3e3;
+    position: relative;
+}
+
+.one{
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.one:hover{
+    width: 100px;
 }
 .mainNewBlogMid{
     margin: 20px 0;
@@ -714,18 +783,28 @@ a {
 .line_up{
     margin-top: 20px;
     width: 100%;
-    height: 112px;
-    background: deeppink;
-    position: revert;
+    /*background: deeppink;*/
+    position: relative;
+    margin-bottom: 20px;
 }
 .line_up a{
-    position: relative;
+    display:block ;
+    height: 140px;
+    width: 240px;
+    overflow: hidden;
+    border-radius: 5px;
 }
-.line_up  > a  > span{
+.line_up a img{
+    transition: transform 1s linear;
+}
+.line_up a:hover img{
+    transform: scale(1.2,1.2);
+}
+.line_up > span{
     position: absolute;
-    bottom: 35px;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left:0;
+    margin-top: -10px;
     color: #ffffff;
     text-align: center;
     font-size: 15px;
@@ -743,61 +822,88 @@ a {
     /*height: 207px;*/
     /*background: lightpink;*/
 }
-.slideText2 ul li{
+.slidelistWAI{
     width: 100%;
-    height: 38px;
+}
+.slidelistWAI li{
+    width: 100%;
+    height: 30px;
     margin-bottom: 14px;
+    /*background: #FF1177 ;*/
+    position: relative;
     background: #f6f6f6;
     border-radius: 5px;
-    position: relative;
-    overflow: hidden;
+
 }
-.slideText2 li::before{
-    content: '1';
-    width: 14px;
-    height: 14px;
-    background: red;
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    text-align: center;
-    line-height: 14px;
-}
-.slideText2_1{
-    float: left;
-    width: 38px;
-    height: 38px;
-    /*background: #36FF97;*/
-}
-/*.slideText2_102::before{*/
-/*    content: '2';*/
-/*    !*width: 14px;*!*/
-/*    !*height: 14px;*!*/
-/*    !*background: red;*!*/
-/*    !*position: absolute;*!*/
-/*    !*top: 12px;*!*/
-/*    !*left: 12px;*!*/
-/*    !*text-align: center;*!*/
-/*    !*line-height: 14px;*!*/
-/*}*/
-.slideText2_2{
-    height: 38px;
-    width: 200px;
-    /*margin-left: 140px;*/
-    float: left;
-    line-height: 38px;
-    text-align: center;
-}
-.slideText2_2 a{
+.slidelistWAI > li > a{
+    padding-left: 30px;
+    color:#333;
+    font-size: 15px;
+    line-height: 30px;
     display: block;
-    height: 38px;
-    width: 200px;
-    color: black;
-    font-size: 12px;
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
+
+/*.slidelistWAI > li >i{*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    background: #ff6600;*/
+/*    position: absolute;*/
+/*    top:7px;*/
+/*    left:7px;*/
+/*}*/
+.slidelistWAI > li ::before{
+    content: '';
+    /*color: white;*/
+    width: 16px;
+    height: 16px;
+    /*background: #ff6600;*/
+    position: absolute;
+    top:7px;
+    left:7px;
+    line-height: 16px;
+    font-style: normal;
+    text-align: center;
+
+}
+.slidelistWAI :first-child ::before{
+    content: '1';
+    color: #f6f6f6;
+    background: #ff6600;
+}
+.slidelistWAI :nth-child(2) ::before{
+    content: '2';
+    color: #f6f6f6;
+    background: #ff6600;
+}
+.slidelistWAI :nth-child(3) ::before{
+    content: '3';
+    color: #f6f6f6;
+    background: #ff6600;
+}
+.slidelistWAI :nth-child(4) ::before{
+    content: '4';
+    color: #f6f6f6;
+    background: #b1b1b1;
+}
+.slidelistWAI :nth-child(5) ::before{
+    content: '5';
+    color: #f6f6f6;
+    background: #b1b1b1;
+}
+.slidelistWAI :nth-child(6) ::before{
+    content: '6';
+    color: #f6f6f6;
+    background: #b1b1b1;
+}
+.slidelistWAI :last-child ::before{
+    content: '7';
+    color: #f6f6f6;
+    background: #b1b1b1;
+}
+
 .mainStation{
     margin-top: 20px;
     padding: 20px;
@@ -842,22 +948,36 @@ a {
     display: block;
     margin: 10px 0;
 }
-.thisisapicture{
+
+.Picture{
     margin-top: 20px;
-    padding: 20px;
     width: 240px;
-    background: #ffffff;
+    height: auto;
     float: right;
+    /*min-height: 300px;*/
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.Picture > a{
+    height: 174px;
+    width: 240px;
+    display: block;
+    overflow: hidden;
     border-radius: 5px;
 }
-.thisisapicture a {
+.Picture > a >img{
+    height: 174px;
     width: 240px;
-    height: 171px;
+    transition: transform 1s linear;
 }
-.thisisapicture a img{
-    width: 240px;
-    height: 171px;
+
+.Picture a:hover img{
+    transform: scale(1.2,1.2);
 }
+
 /*main end*/
 /*main end*/
 

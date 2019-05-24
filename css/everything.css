@@ -1,0 +1,488 @@
+/*群组选择器，去掉如下标签的自带格式的边距*/
+body, h1, h2, h3, h4, h5, h6, ul, ol, form, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-family: 华文楷体, 微软雅黑, 华文仿宋, sans-serif;
+}
+
+body {
+    background: #e9eaed;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*以上为整体样式*/
+/*header start!*/
+.header {
+    /*为全屏的100%*/
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+
+.headerBox {
+    margin: 0 auto;
+    width: 1200px;
+    /*为父辈的100%*/
+    height: 100%;
+    line-height: 60px;
+}
+
+.headerBox h1 {
+    margin-right: 84px;
+    float: left;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.headerBox ul {
+
+    float: left;
+    display: inline-block;
+}
+
+.headerBox ul li {
+    margin-right: 14px;
+    float: left;
+
+}
+
+.headerBox ul li a:hover {
+    color: #00c1de;
+}
+
+.headerBox div {
+    width: 74px;
+    height: 100%;
+    /*background: #FF0C02;*/
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+.headerBox div img {
+    width: 27px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    margin-left: 22px;
+}
+
+/*header end!*/
+
+
+
+.middle{
+    margin: 20px auto;
+    width: 1200px;
+    height: auto;
+    /*background: black;*/
+    min-height: 600px;
+}
+
+.middle > .main{
+    width:864px;
+    height: auto;
+    background: white;
+    min-height: 500px;
+    float: left;
+    padding:20px;
+    overflow: hidden;
+}
+.main > h2 {
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+    /*background: #44b5ff;*/
+}
+.donghua{
+    width: 110px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+    /*animation: 0.5s;*/
+    /*moz-animation:0.5s;*/
+}
+h2:hover .donghua{
+    width: 130px;
+}
+
+.main > h2 > span{
+    width: 255px;
+    height: 40px;
+    color: #666;
+    font-size: 14px;
+    float:right;
+}
+.main > h2 > span > a{
+    font-size: 14px;
+    color: #666;
+}
+
+.news > h1{
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+}
+.look{
+    margin-top: 20px;
+    height: 34px;
+}
+.look img{
+    width: 34px;
+    height: 34px;
+    float: left;
+    margin-right: 10px;
+}
+
+.look span{
+    color:#999;
+    line-height: 34px;
+}
+
+.introduction{
+    color: #888888;
+    border: 1px solid #F3F3F3;
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    background: none repeat 0 0 #F6F6F6;
+}
+.introduction > span{
+    font-weight: bold;
+    color:#000;
+}
+.introduction1{
+    position: relative;
+    color: #888888;
+    border: 1px solid #F3F3F3;
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    background: none repeat 0 0 #F6F6F6;
+    overflow: hidden;
+}
+.introduction1 > span{
+    font-weight: bold;
+    color:#000;
+    overflow: hidden;
+}
+.CC{
+    width: 5px;
+    height: 68px;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 99999;
+}
+.describe{
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    /*background: #4ebbfe;*/
+    color:#333;
+}
+.onepicture{
+    display: block;
+    margin: 20px 99px;
+    width: 666px;
+    height: 444px;
+}
+.onepicture img{
+    /*display: block;*/
+    width: 666px;
+    height: 444px;
+
+}
+/*160,40*/
+.zan{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    /*background: #FF1177;*/
+}
+
+.zan > div{
+    margin:0 352px;
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    background: #ff6600;
+    border-radius: 5px;
+}
+
+.slide{
+    width: 240px;
+    height: auto;
+    float: right;
+    min-height: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.slideSome{
+    width: 240px;
+    height: auto;
+    min-height: 200px;
+    /*background: #4ebbfe;*/
+}
+.slideSome h2{
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+}
+.donghuaclick{
+    width: 70px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+}
+
+h2:hover .donghuaclick{
+    width: 90px;
+}
+
+.slideImg{
+    margin-top: 20px;
+    width: 100%;
+    /*background: deeppink;*/
+    position: relative;
+    margin-bottom: 20px;
+}
+.slideImg > a{
+    display:block ;
+    height: 140px;
+    width: 240px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slideImg a img{
+    transition: transform 1s linear;
+}
+.slideImg a:hover img{
+    transform: scale(1.2,1.2);
+}
+.slideImgjuzi{
+    position: absolute;
+    top: 50%;
+    left:0;
+    margin-top: -32px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    /*padding: 0 40px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 22px;
+}
+
+.slidelist{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    /*background: #36FF97;*/
+}
+.slidelistWAI{
+    width: 100%;
+}
+.slidelistWAI li{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 14px;
+    /*background: #FF1177 ;*/
+    position: relative;
+
+}
+.slidelistWAI > li > a{
+    padding-left: 30px;
+    color:#333;
+    font-size: 15px;
+    line-height: 30px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*.slidelistWAI > li >i{*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    background: #ff6600;*/
+/*    position: absolute;*/
+/*    top:7px;*/
+/*    left:7px;*/
+/*}*/
+.slidelistWAI > li >i::before{
+    content: '';
+    color: white;
+    width: 16px;
+    height: 16px;
+    background: #ff6600;
+    position: absolute;
+    top:7px;
+    left:7px;
+    line-height: 16px;
+    font-style: normal;
+    text-align: center;
+
+}
+.slidelistWAI :first-child ::before{
+    content: '1';
+    color: white;
+}
+.slidelistWAI :nth-child(2) ::before{
+    content: '2';
+    color: white;
+}
+.slidelistWAI :last-child ::before{
+    content: '3';
+    color: white;
+}
+
+.slidelistEr{
+    width: 100%;
+    height: auto;
+}
+.slidelistEr li{
+    width: 100%;
+    height: 60px;
+    /*background: pink;*/
+    margin-bottom: 14px;
+}
+
+.slidelistEr li img{
+    width: 70px;
+    height: 60px;
+    float: left;
+}
+.slidelistEr li > a{
+    float: right;
+    height: 60px;
+    width: 160px;
+}
+.slidelistEr li > a > div{
+    color: #484848;
+    font-size: 15px;
+}
+.Picture{
+    width: 240px;
+    height: auto;
+    float: right;
+    /*min-height: 300px;*/
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.Picture > a{
+    height: 174px;
+    width: 240px;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.Picture > a >img{
+    height: 174px;
+    width: 240px;
+    transition: transform 1s linear;
+}
+
+.Picture a:hover img{
+    transform: scale(1.2,1.2);
+}
+
+
+
+
+
+
+
+/*底部导航开始*/
+.back{
+    width: 100%;
+    height: 192px;
+    /*background: black;*/
+}
+.backTop{
+    width: 100%;
+    height: 14px;
+    background: #00c1de;
+}
+.backBottom{
+    width: 100%;
+    height: 178px;
+    background: black;
+}
+.backmain{
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    /*background: #36FF97;*/
+}
+.backmainLeft{
+    width: 300px;
+    height: 100%;
+    float: left;
+    /*background: #0788DE;*/
+}
+.backmainLeft img{
+    width: 90px;
+    height: 90px;
+    margin: 30px 10px 10px 20px;
+    float: left;
+    /*color:white;*/
+}
+.backmainRight{
+    float: right;
+    width: 900px;
+    height: 100%;
+    /*background: pink;*/
+}
+.backmainRight h3{
+    margin-top:30px;
+    font-size: 18px;
+    color:#00c1de;
+
+}
+.backmainRight p{
+    margin-top: 10px;
+    font-size:16px;
+    color:#737771;
+}

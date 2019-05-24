@@ -82,19 +82,119 @@ a {
 
 /*header end!*/
 
+
 /*中间开始*/
 .main{
     margin: 20px auto;
+    /*padding: 30px;*/
     width: 1200px;
-    height: 360px;
+    height: 1004px;
     background: white;
     position: relative;
 }
 
+.mainMiddle{
+    margin-left: 30px;
+    width: 1140px;
+    /*height: 944px;*/
+    /*background: #FF1177;*/
+}
+.mainMiddle > h2 {
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+    /*background: #44b5ff;*/
+    position: relative;
+}
+.donghua{
+        width: 60px;
+        height: 2px;
+        background: black;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: width 0.5s ease;
+        /*animation: 0.5s;*/
+        /*moz-animation:0.5s;*/
+}
+h2:hover .donghua{
+    width: 100px;
+}
+.mainlist > li{
+    position: relative;
+}
+.mainlist  > li > span{
+    line-height: 32px;
+    color: #999;
+    margin-right: 40px;
+    /*background: #44b5ff;*/
+    position: relative;
+}
 
+.mainlist  > li > span:after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background: #e0dfdf;
+    top:-16px;
+    right: -26px;
+}
 
+.mainlist > li > i{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #cccaca;
+    position: absolute;
+    top:8px;
+    left:88px;
+    display: inline-block;
+}
+.mainlist > li:hover i{
+    background: #000;
+}
+.mainlist > li > a{
+    color:#333;
+    font-size: 16px;
 
+}
+.mainImg{
+    width: 108px;
+    height: 216px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mainImg img{
+    width: 100%;
+    height: 100%;
+}
+.mainBottom{
+    width: 1140px;
+    height: 32px;
+    margin-bottom: 38px;
+    /*background: #44b5ff;*/
+    position: absolute;
+    bottom: 20px;
+    /*overflow: hidden;*/
+    margin-left: 30px;
+}
+.mainBottomOne{
+    margin-left: 490px;
+}
+.mainBottom > .mainBottomOne > span{
+    background: #f7f7f7;
+    color: #000;
+    padding: 10px;
+    font-size: 14px;
 
+}
 
 
 
