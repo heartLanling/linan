@@ -93,7 +93,7 @@ a {
 .bannerLeft {
     width: 620px;
     height: 260px;
-    background: aquamarine;
+    /*background: aquamarine;*/
     float: left;
     position: relative;
     /*overflow: hidden;*/
@@ -103,18 +103,25 @@ a {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow:hidden;
 }
 .bannerImg li{
     width: 100%;
     height: 100%;
     position: absolute;
     top:0;
-    left:0;
+    left:620px;
+
+
+}
+.bannerImg li:first-child{
+    left: 0;
 }
 .bannerImg  > li > a{
     display: block;
     width: 620px;
     height: 260px;
+
     /*position: absolute;*/
     /*top:0px;*/
     /*left:0px;*/
@@ -130,6 +137,7 @@ a {
     top: 50%;
     margin-top: -15px;
     /*margin-left: 20px;*/
+   z-index: 9999;
 }
 
 .arrowPoint > .arrowPointLeft{
@@ -153,6 +161,7 @@ a {
     /*top: 50%;*/
     /*margin-top: -15px;*/
     /*margin-right: 20px;*/
+
 }
 
 .pointSelect{
@@ -177,20 +186,21 @@ a {
     margin-right: 10px;
     float: left;
     border-radius:50%;
+    transition: 0.5s;
 }
 
-.pointSelect > ul > li > a{
-    width: 10px;
-    height:10px;
-    background: white;
-    margin-right: 10px;
-    float: left;
-    border-radius:50%;
-}
+/*.pointSelect > ul > li > a{*/
+/*    width: 10px;*/
+/*    height:10px;*/
+/*    background: white;*/
+/*    margin-right: 10px;*/
+/*    float: left;*/
+/*    border-radius:50%;*/
+/*}*/
 
-.pointSelect > ul > li > a:hover {
-    background: #00c1de;
-}
+/*.pointSelect > ul > li > a:hover {*/
+/*    background: #00c1de;*/
+/*}*/
 
 /*没有变颜色？为什么？*/
 /*bannerLeft end!*/
@@ -327,6 +337,10 @@ a {
 .dairyLeftNav  > ul > li > a{
     color: #000;
     margin-right: 20px;
+}
+
+.dairyLeftNav > ul > li.active{
+    border-bottom: 2px solid #000000;
 }
 
 .dairyLeftList{
