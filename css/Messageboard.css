@@ -1,0 +1,298 @@
+/*群组选择器，去掉如下标签的自带格式的边距*/
+body, h1, h2, h3, h4, h5, h6, ul, ol, form, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-family: 华文楷体, 微软雅黑, 华文仿宋, sans-serif;
+}
+
+body {
+    background: #e9eaed;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*以上为整体样式*/
+/*header start!*/
+.header {
+    /*为全屏的100%*/
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+
+.headerBox {
+    margin: 0 auto;
+    width: 1200px;
+    /*为父辈的100%*/
+    height: 100%;
+    line-height: 60px;
+}
+
+.headerBox h1 {
+    margin-right: 84px;
+    float: left;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.headerBox ul {
+
+    float: left;
+    display: inline-block;
+}
+
+.headerBox ul li {
+    margin-right: 14px;
+    float: left;
+
+}
+
+.headerBox ul li a:hover {
+    color: #00c1de;
+}
+
+.headerBox div {
+    width: 74px;
+    height: 100%;
+    /*background: #FF0C02;*/
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+.headerBox div img {
+    width: 27px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    margin-left: 22px;
+}
+
+/*header end!*/
+
+
+
+/*中间开始*/
+.main{
+    margin: 20px auto;
+    /*padding: 30px;*/
+    width: 1200px;
+    /*height: 1004px;*/
+    min-height: 600px;
+    background: white;
+    position: relative;
+}
+
+.mainMiddle{
+    margin-left: 30px;
+    width: 1140px;
+    /*height: 944px;*/
+    /*background: #FF1177;*/
+}
+.mainMiddle > h2 {
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+    /*background: #44b5ff;*/
+    position: relative;
+}
+.donghua{
+    width: 60px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+    /*animation: 0.5s;*/
+    /*moz-animation:0.5s;*/
+}
+h2:hover .donghua{
+    width: 100px;
+}
+
+form{
+    margin-top: 20px;
+    color: black;
+    font-size: 16px;
+}
+.headPortrait{
+    height: 70px;
+
+}
+.portrait{
+    float: left;
+    margin: 10px 5px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.portrait > img{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    width: 1000px;
+    height: 260px;
+    position: relative;
+}
+/*.content > span{*/
+/*    display: inline-block;*/
+/*    width:66px;*/
+/*    height: 30px;*/
+/*    background: #000000;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*    line-height: 30px;*/
+/*    border-radius: 5px;*/
+/*    position:absolute;*/
+/*    right: 24px;*/
+/*    bottom: 0;*/
+/*}*/
+/*.content > span:nth-child(1){*/
+/*    position: absolute;*/
+/*    right: 24px;*/
+/*}*/
+/*.content > span:nth-child(2){*/
+/*    position: absolute;*/
+/*    right: 48px;*/
+/*}*/
+
+
+.content input{
+    display: inline-block;
+    width:66px;
+    height: 30px;
+    background: #000000;
+    color: #ffffff;
+    /*text-align: center;*/
+    /*line-height: 30px;*/
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.mainImg{
+    width: 108px;
+    height: 216px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mainImg img{
+    width: 100%;
+    height: 100%;
+}
+.mainBottom{
+    width: 1140px;
+    height: 32px;
+    margin-bottom: 38px;
+    /*background: #44b5ff;*/
+    position: absolute;
+    bottom: 20px;
+    /*overflow: hidden;*/
+    margin-left: 30px;
+}
+.mainBottomOne{
+    margin-left: 490px;
+}
+.mainBottom > .mainBottomOne > span{
+    background: #f7f7f7;
+    color: #000;
+    padding: 10px;
+    font-size: 14px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部导航开始*/
+.back{
+    width: 100%;
+    height: 192px;
+    /*background: black;*/
+}
+.backTop{
+    width: 100%;
+    height: 14px;
+    background: #00c1de;
+}
+.backBottom{
+    width: 100%;
+    height: 178px;
+    background: black;
+}
+.backmain{
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    /*background: #36FF97;*/
+}
+.backmainLeft{
+    width: 300px;
+    height: 100%;
+    float: left;
+    /*background: #0788DE;*/
+}
+.backmainLeft img{
+    width: 90px;
+    height: 90px;
+    margin: 30px 10px 10px 20px;
+    float: left;
+    /*color:white;*/
+}
+.backmainRight{
+    float: right;
+    width: 900px;
+    height: 100%;
+    /*background: pink;*/
+}
+.backmainRight h3{
+    margin-top:30px;
+    font-size: 18px;
+    color:#00c1de;
+
+}
+.backmainRight p{
+    margin-top: 10px;
+    font-size:16px;
+    color:#737771;
+}

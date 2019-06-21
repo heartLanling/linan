@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1196101_83dfy09inw6.css">
     <script src="./js/index.js"></script>
     <script src="./js/animate.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
 </head>
 <body>
 <!--头部 header start-->
@@ -16,11 +19,17 @@
         <ul>
             <li><a href="index.html" style="color: #00c1de">网站首页</a></li>
             <li><a href="ownblogdairy.html">倾小心博客日记</a></li>
-            <li><a href="">倾城记录</a></li>
+            <li class="drop"><a href="#">倾城记录</a>
+                <ul class="droplist">
+                    <li><a href="">锦光</a></li>
+                    <li><a href="">星辰</a></li>
+                    <li><a href="">豆蔻</a></li>
+                </ul>
+            </li>
             <li><a href="aboutme.html">关于我</a></li>
             <li><a href="timeline.html">时间轴</a></li>
             <li><a href="">博客导航</a></li>
-            <li><a href="">日光倾城</a></li>
+            <li><a href="Messageboard.html">日光倾城</a></li>
         </ul>
         <div>
             <img src="./image/bg.png" alt="">
@@ -239,7 +248,7 @@
                 <ul>
                     <li>
                         <div class="specialImg">
-                            <img src="./image/2.jpg" alt="">
+                            <img class="lazy" data-original="./image/2.jpg" alt="">
                         </div>
                         <h2>【个人博客空间申请】金牛云服，免费领空间啦</h2>
                         <p>还在愁域名购买了，如何选择主机或者服务器吗？
@@ -253,7 +262,7 @@
                     <!--                    li*6-->
                     <li>
                         <div class="specialImg">
-                            <img src="./image/2.jpg" alt="">
+                            <img class="lazy" data-original="./image/2.jpg" alt="">
                         </div>
                         <h2>【个人博客空间申请】金牛云服，免费领空间啦</h2>
                         <p>还在愁域名购买了，如何选择主机或者服务器吗？
@@ -266,7 +275,7 @@
                     </li>
                     <li>
                         <div class="specialImg">
-                            <img src="./image/2.jpg" alt="">
+                            <img class="lazy" data-original="./image/2.jpg" alt="">
                         </div>
                         <h2>【个人博客空间申请】金牛云服，免费领空间啦</h2>
                         <p>还在愁域名购买了，如何选择主机或者服务器吗？
@@ -279,7 +288,7 @@
                     </li>
                     <li>
                         <div class="specialImg">
-                            <img src="./image/2.jpg" alt="">
+                            <img class="lazy" data-original="./image/2.jpg" alt="">
                         </div>
                         <h2>【个人博客空间申请】金牛云服，免费领空间啦</h2>
                         <p>还在愁域名购买了，如何选择主机或者服务器吗？
@@ -292,7 +301,7 @@
                     </li>
                     <li>
                         <div class="specialImg">
-                            <img src="./image/2.jpg" alt="">
+                            <img class="lazy" data-original="./image/2.jpg" alt="">
                         </div>
                         <h2>【个人博客空间申请】金牛云服，免费领空间啦</h2>
                         <p>还在愁域名购买了，如何选择主机或者服务器吗？
@@ -305,7 +314,7 @@
                     </li>
                     <li>
                         <div class="specialImg">
-                            <img src="./image/2.jpg" alt="">
+                            <img class="lazy" data-original="./image/2.jpg" alt="">
                         </div>
                         <h2>【个人博客空间申请】金牛云服，免费领空间啦</h2>
                         <p>还在愁域名购买了，如何选择主机或者服务器吗？
@@ -782,6 +791,31 @@
                 </div>
             </div>
         </div>
+    </div>
 <!--底部导航结束-->
+<script>
+    //jquery实现下拉框
+    $(function () {
+        let dropBtn=$('li:has(.droplist)');
+        let drop=$('.droplist');
+        dropBtn.on('mouseenter',function () {
+            let index=$(this).index('li:has(.droplist)');
+            $(drop[index]).slideDown();
+        });
+        dropBtn.on('mouseleave',function () {
+            let index=$(this).index('li:has(.droplist)');
+            $(drop[index]).slideUp();
+        });
+        dropBtn.hover(function () {
+            let index=$(this).index('li:has(.droplist)');
+
+        })
+    })
+</script>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+</script>
 </body>
 </html>
